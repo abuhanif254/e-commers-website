@@ -4,3 +4,112 @@
     box-sizing: border-box;
 
 }
+/*nav style*/
+.brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: cornflowerblue;
+    box-shadow: 5px 5px 5px ;
+    position: sticky;
+    
+}
+.brand-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    gap: 5px
+    ;
+    
+}
+.brand-name img{
+    height: 90px;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+.brand-name h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: mediumaquamarine;
+    border: 1px solid mediumaquamarine;
+    border-radius: 4px;
+
+}
+.navigation-container ul{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 10px;
+    
+
+}
+.navigation-container ul  a{
+    text-decoration: none;
+  
+}
+.navigation-container a{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+   
+    background-color: aqua;
+    padding: 100px 20px ;
+    min-height: 85vh;
+    
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.hero-section img{
+    max-width: 450px;
+    height: auto;
+    border-radius: 50%;
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+
+
+}
+.hero-content h1{
+    font-size: 52px;
+    color: #2c3e50;
+    line-height: 1.2;
+    margin: 0;
+
+
+}.hero-content p{
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.7;
+    max-width: 550px;
+    margin: 0;
+}
+.hero-content button {
+    background: linear-gradient(90deg, #ff8c00, #ff4500); /* গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+    color: white;             /* লেখার রঙ */
+    padding: 15px 30px;       /* বাটনের ভেতরের জায়গা */
+    text-decoration: none;    /* নিচের আন্ডারলাইন সরাতে */
+    border-radius: 50px;      /* বাটনটিকে ক্যাপসুল আকৃতি দিতে */
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    transition: all 0.3s ease; /* হোভার ইফেক্ট স্মুথ করার জন্য */
+    display: inline-block;
+    margin-top: 10px; }
+    .hero-content button:hover {
+    transform: translateY(-3px); /* হোভার করলে বাটনটি একটু উপরে উঠবে */
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6); /* শ্যাডো বাড়বে */
+}
+
