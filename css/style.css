@@ -13,6 +13,7 @@
     background-color: cornflowerblue;
     box-shadow: 5px 5px 5px ;
     position: sticky;
+    top: 0;
     
 }
 .brand-name{
@@ -112,4 +113,27 @@
     transform: translateY(-3px); /* হোভার করলে বাটনটি একটু উপরে উঠবে */
     box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6); /* শ্যাডো বাড়বে */
 }
+.features{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: aqua;
+}
+.feature{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 
+}
+.feature-content{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.features img{
+   height: 100px;
+    border: 3px solid red;
+    border-radius: 50%;
+
+}
