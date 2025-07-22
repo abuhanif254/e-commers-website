@@ -137,3 +137,55 @@
     border-radius: 50%;
 
 }
+.devider{
+    border: 1px solid cornflowerblue;
+    margin: 2px 0;
+}
+/* Menu Grid Section Styling */
+.grid {
+    display: grid;
+    /* responsive কলাম তৈরি করে, প্রতিটি আইটেমের সর্বনিম্ন প্রস্থ 300px হবে */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* আইটেমগুলোর মধ্যে ফাঁকা জায়গা */
+    padding: 20px;
+    max-width: 1200px; /* সর্বোচ্চ প্রস্থ নির্ধারণ */
+    margin: 0 auto; /* কন্টেইনারকে মাঝে আনার জন্য */
+}
+
+.item1 {
+    border-radius: 10px; /* কোণাগুলো কিছুটা বাঁকানো হবে */
+    overflow: hidden; /* হোভার ইফেক্টের জন্য ছবির বর্ধিত অংশ লুকিয়ে রাখবে */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* হালকা শ্যাডো */
+    transition: transform 0.3s ease; /* মসৃণ হোভার ইফেক্ট */
+}
+
+.item1:hover {
+    transform: scale(1.05); /* হোভার করলে আইটেমটি বড় হবে */
+}
+
+.item1 img {
+    width: 100%; /* ছবিটি কন্টেইনারের পুরো প্রস্থ জুড়ে থাকবে */
+    height: 100%; /* ছবিটি কন্টেইনারের পুরো উচ্চতা জুড়ে থাকবে */
+    object-fit: cover; /* ছবির aspect ratio ঠিক রেখে কন্টেইনারে ফিট হবে */
+    display: block; /* ছবির নিচে অপ্রয়োজনীয় ফাঁকা জায়গা দূর করতে */
+}
+/* Tag ("Our Menu") এর জন্য স্টাইল */
+.tag {
+    color: #ffffff; /* লেখার রঙ সাদা */
+    background-color: #27ae60; /* একটি সুন্দর সবুজ রঙ */
+    padding: 8px 25px; /* ভেতরের ফাঁকা জায়গা */
+    border-radius: 50px; /* এটিকে একটি ক্যাপসুল আকৃতি দেবে */
+    font-size: 0.9rem; /* ফন্টের সাইজ */
+    font-weight: 600; /* লেখা কিছুটা বোল্ড হবে */
+    display: inline-block; /* এটি শুধু তার ভেতরের লেখার সমান জায়গা নেবে */
+}
+
+/* H2 ("Explore Our Menu") এর জন্য স্টাইল */
+h2 {
+    font-size: 2.8rem; /* বড় এবং আকর্ষণীয় ফন্ট সাইজ */
+    font-weight: 700;
+    color: #333333; /* প্রায় কালো একটি রঙ */
+    text-align: center; /* লেখা মাঝে থাকবে */
+    margin-top: 15px; /* উপরের 'tag' থেকে দূরত্ব */
+    margin-bottom: 40px; /* নিচের গ্রিড থেকে দূরত্ব */
+}
